@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    overflow: hidden;
+    height: 10vh;
+    min-height: 65px;
+    max-height: 70px;
+    border: 1px solid black;
+    padding: 0 10px 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between
+}
+
+nav>div>a>img {
+    width: auto;
+    max-width: 500px;
+    min-width: 100px;
+    height: 10vh;
+    min-height: 60px;
+    max-height: 70px;
+    object-fit: contain
+}
+nav>ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav>ul>li{
+    padding: 5px;
+    text-transform: capitalize;
+}

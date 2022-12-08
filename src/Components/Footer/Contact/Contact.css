@@ -1,0 +1,70 @@
+#Contact {
+    max-width: 400px;
+    width: 20rem;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 20px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#Contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    min-height: 100px;
+    max-height: 110px;
+
+}
+
+#Contact-details>h3 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+
+#Contact-details>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+#Contact-details>div>h4 {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    flex-grow: 0;
+}
+
+#Contact-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
