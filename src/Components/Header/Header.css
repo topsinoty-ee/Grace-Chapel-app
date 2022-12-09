@@ -1,4 +1,4 @@
-header {
+#header {
     width: 100%;
     overflow: hidden;
     height: 10vh;
@@ -8,7 +8,7 @@ header {
     padding: 0 10px 0 10px;
 }
 
-nav {
+#nav {
     display: flex;
     justify-content: space-between
 }

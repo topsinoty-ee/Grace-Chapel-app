@@ -36,11 +36,7 @@ export let Nav = [
         description: ".........."
     }
 ]
-export let FamilyBranches = {
-    churchName1: "Church Name 1",
-    churchName2: "Church Name 2",
-    churchName3: "Church Name 3",
-}
+
 //Number spacer
 num = num.slice(0, 4) + " " + num.slice(4, 8) + " " + num.slice(8, 12);
 
@@ -57,7 +53,33 @@ export let Field = (props) => {
     return <p>{props.name}: {props.detail}</p>
 }
 
+export function ImageCard(props) {
+    return (
+        <div className="card">
+            <figure>
+                <img alt={props.alt} src={props.src} />
+                <figcaption>
+                    {props.description}
+                </figcaption>
+            </figure>
+        </div>
 
+    );
+}
+export let FamilyBranches = [
+    {
+        churchName, description: "Church Name 1",
+        src: "https://seminary.grace.edu/wp-content/uploads/2021/03/Understanding-Biblical-Christian-Fellowship-1200x800-c-default.jpg"
+    },
+    {
+        churchName, description: "Church Name 2",
+        src: "https://www.lillyfellows.org/media/1057/postdoctoralfellowsabout.jpg"
+    },
+    {
+        churchName, description: "Church Name 3",
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8IFUykdawCoKU0b0iQSNypPBNffy0XsO_PQ&usqp=CAU"
+    }
+]
 
 //Tests
 console.log("Num:" + num)

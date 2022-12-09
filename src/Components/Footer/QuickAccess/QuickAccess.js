@@ -5,8 +5,8 @@ import "./QuickAccess.css";
 
 function Links() {
     return (
-        <ol id="footer-links">
-            <nav>
+        <ol>
+            <nav id="footer-links">
                 <li className="footer-link"><a href="/contact" title="Contact us">Contact Us</a></li>
                 <li className="footer-link"><a href="/cookies" title="Cookies">Cookies</a></li>
                 <li className="footer-link"><a href="/policy" title="Policies">Policies</a></li>

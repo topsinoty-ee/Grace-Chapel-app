@@ -6,8 +6,8 @@ import React from "react";
 
 export default function Header() {
     return (
-        <header>
-            <nav>
+        <header id='header'>
+            <nav id='nav'>
                 <div>
                     <a href="/"><img src={Logo} alt="/" /></a>
                 </div>
