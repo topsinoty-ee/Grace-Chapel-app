@@ -1,8 +1,7 @@
-import { Field } from "../../Data";
-import { Contact } from "../../Data";
+import { Field } from "./Data";
+import { Contact } from "./Data";
 import React from "react";
 import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } from 'react-icons/ai';
-import "./Contact.css"
 
 function ContactDetails() {
     return (

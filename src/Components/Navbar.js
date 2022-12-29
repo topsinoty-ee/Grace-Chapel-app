@@ -1,4 +1,4 @@
-import { Nav } from "../Data"
+import { Nav } from "./Data"
 import React from "react";
 
 

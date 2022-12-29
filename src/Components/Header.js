@@ -1,6 +1,5 @@
-import Logo from '../../Logos/s-Logo.svg';
+import Logo from '../Assets/Logos/s-Logo.svg';
 import Navbar from './Navbar';
-import "./Header.css"
 import React from "react";
 
 

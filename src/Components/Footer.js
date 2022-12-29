@@ -1,7 +1,6 @@
-import ContactSection from "./Contact/Contact";
-import Map from "./Map/Map";
-import QuickAccess from "./QuickAccess/QuickAccess";
-import "./Footer.css";
+import ContactSection from "./Contact";
+import Map from "./Map";
+import QuickAccess from "./QuickAccess";
 import React from "react";
 export default function Footer() {
     return (

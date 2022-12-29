@@ -1,7 +1,6 @@
-import { Name } from "../../Data";
-import { Vert } from "../../Data";
+import { Vert } from "./Data";
+import { Name } from "./Data";
 import React from "react";
-import "./QuickAccess.css";
 
 function Links() {
     return (

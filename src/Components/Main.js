@@ -1,5 +1,5 @@
 import React from "react";
-import GetInvolved from "./GetInvolved/GetInvolved";
+import GetInvolved from "./GetInvolved";
 
 export default function Main(){
     return(

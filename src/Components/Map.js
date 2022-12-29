@@ -1,5 +1,4 @@
 import { AiFillEnvironment } from 'react-icons/ai'
-import "./Map.css"
 import React from "react";
 
 const Location = () => {
