@@ -1,4 +1,4 @@
-#Contact {
+/* #Contact {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -115,7 +115,7 @@ nav>ul>li{
     text-transform: capitalize;
 }
 
-/*Card section*/
+/*Card section
 .card {
     display: flex;
     flex-direction: column;
@@ -141,7 +141,7 @@ nav>ul>li{
     border-radius: 10px 10px 0px 0px;
 }
 
-/* Backgraund shadow */
+/* Backgraund shadow 
 .card::after {
     position: absolute;
     content: '';
@@ -310,4 +310,4 @@ nav>ul>li{
     .getInvolved--mainDiv{
         min-width: 680px;
     }
-}
+} */
