@@ -1,9 +1,8 @@
-import { Field } from "./Data";
-import { Contact } from "./Data";
+//import { Field, Contact } from "./Data";
 import React from "react";
-import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube } from 'react-icons/ai';
+import { Socials } from "./Data";
 
-function ContactDetails() {
+const ContactDetails = () => {
     return (
         <div id="Contact-details">
             <h3>Contact Us</h3>
@@ -32,22 +31,14 @@ function ContactDetails() {
         </div>)
 }
 
-function SocialIcons() {
-    return (
-        <div id="Contact-socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><AiFillFacebook /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><AiFillInstagram /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><AiFillTwitterSquare /></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><AiFillYoutube /></a>
-        </div>
-    )
-}
 
-export default function ContactSection() {
+
+const ContactSection = () => {
     return (
         <div id="Contact">
             <ContactDetails />
-            <SocialIcons />
+            <Socials />
         </div>
     )
 }
+export default ContactSection

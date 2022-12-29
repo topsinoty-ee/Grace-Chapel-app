@@ -1,5 +1,4 @@
-import { FamilyBranches } from "./Data";
-import { ImageCard } from "./Data";
+import { FamilyBranches, ImageCard } from "./Data";
 import React from "react";
 
 export default function GetInvolved() {

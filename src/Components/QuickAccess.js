@@ -1,5 +1,4 @@
-import { Vert } from "./Data";
-import { Name } from "./Data";
+import { Vert, Name } from "./Data";
 import React from "react";
 
 function Links() {
@@ -27,8 +26,8 @@ function Copyright() {
 export default function QuickAccess() {
     return (
         <div id="quickAccess">
-            <Links/>
-            <Copyright/>
+            <Links />
+            <Copyright />
         </div>
     )
 }
