@@ -13,8 +13,9 @@ const link = {
     instagram: 'https://instagram.com',
     twitter: 'https://twitter.com',
     youtube: 'https://youtube.com',
-    location:'https://goo.gl/maps/PLNhAvWZeKsc2y6F7',
-    mapLocation: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.941194716545!2d24.752800615653978!3d59.43405530966379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692936000ef7fb3%3A0x73e9406c32a38e38!2zUsOkdmFsYSA4!5e0!3m2!1sen!2see!4v1669968646436!5m2!1sen!2see'
+    location: 'https://goo.gl/maps/PLNhAvWZeKsc2y6F7',
+    mapLocation: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.941194716545!2d24.752800615653978!3d59.43405530966379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692936000ef7fb3%3A0x73e9406c32a38e38!2zUsOkdmFsYSA4!5e0!3m2!1sen!2see!4v1669968646436!5m2!1sen!2see',
+    heroVid: 'https://www.w3schools.com/tags/movie.mp4'
 }
 
 
@@ -78,6 +79,18 @@ const ImageCard = (props) => {
 
     );
 }
+const Video = (video, width, height) => {
+    return (
+
+        <figure>
+            <video width={width} height={height} loop autoPlay name='media'>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video element.
+            </video>
+        </figure>
+
+    )
+}
 const FamilyBranches = [
     {
         churchName, description: "Church Name 1",
@@ -108,7 +121,7 @@ const Socials = () => {
 
 
 //export
-export { FamilyBranches, ImageCard, Field, Nav, Vert, Name, Socials, link }
+export { FamilyBranches, ImageCard, Field, Nav, Vert, Name, Socials, link, Video }
 
 //Tests
 console.log("Num:" + num)
