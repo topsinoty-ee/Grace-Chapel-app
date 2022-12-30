@@ -1,5 +1,5 @@
 import React from 'react'
-import { Socials, link } from './Data'
+import { Socials, link, Media } from './Data'
 
 const Hero = () => {
     return (
@@ -20,12 +20,7 @@ const Hero = () => {
                 </div>
             </div>
             <div id='hero--video'>
-                <figure>
-                    <video width='80%' height='80%' loop autoPlay muted name='media'>
-                        <source src={link.heroVid} type="video/mp4" />
-                        Your browser does not support the video element.
-                    </video>
-                </figure>
+                <Media type='video' video={link.heroVid} percent='80%' format='ALM' />
             </div>
         </div>
     )

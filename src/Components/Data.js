@@ -19,10 +19,6 @@ const link = {
 }
 
 
-
-
-
-
 //CODE. READ ONLY
 const Name = churchName;
 const Vert = verticalDivider;
@@ -49,6 +45,8 @@ const Nav = [
         description: ".........."
     }
 ]
+
+
 
 //Number spacer
 num = num.slice(0, 4) + ' ' + num.slice(4, 8) + ' ' + num.slice(8, 12);
@@ -79,17 +77,34 @@ const ImageCard = (props) => {
 
     );
 }
-const Video = (video, width, height) => {
+const button = (props) => {
     return (
-
-        <figure>
-            <video width={width} height={height} loop autoPlay name='media'>
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video element.
-            </video>
-        </figure>
-
+        <button>
+            {props.text}
+        </button>
     )
+}
+const Media = (props) => {
+    
+    const noPointer = {
+        pointerEvents: 'none'
+    }
+
+    if (props.format === 'ALM' && props.type==='video')//autoPlay muted loop {alphabetical order}
+    {
+        return (
+
+            <figure>
+                <video width={props.percent} style={noPointer} height={props.percent} name='media' autoPlay muted loop>
+                    <source src={props.video} type="video/mp4" />
+                    Your browser does not support the video element.
+                </video>
+            </figure>
+
+        )
+    } else {
+        return (<span>Input with right semantics</span>)
+    }
 }
 const FamilyBranches = [
     {
@@ -121,7 +136,7 @@ const Socials = () => {
 
 
 //export
-export { FamilyBranches, ImageCard, Field, Nav, Vert, Name, Socials, link, Video }
+export { FamilyBranches, ImageCard, Field, Nav, Vert, Name, Socials, link, Media }
 
 //Tests
 console.log("Num:" + num)
