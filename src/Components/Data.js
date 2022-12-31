@@ -112,8 +112,9 @@ const Field = (props) => {
 
 const ImageCard = (props) => {
     if (props.events === 'true') {
+        console.log('test')
         return (
-            <div className='card'>
+            <div className='event-card'>
                 <figure>
                     <img alt={props.alt} src={props.src} />
                     <figcaption>
@@ -182,86 +183,28 @@ const FamilyBranches = [
     }
 ]
 
-const EventList = (
-    props//, props
-) => {
-    // if (props.type === 'upcoming') {
+const EventList = (props) => {
     const type = props.type;
-    const events = props.events;
-
-    const eventlist = events.map(
-        event =>
-            <li>
-                <ImageCard
-                    events={true}
-                    alt={props.title}
-                    title={props.title}
-                />
-            </li>
-    )
+    const events = props.events; //arr
 
     while (type === 'upcoming') {
-        return (
-            <aside>
-                <ul></ul>
-            </aside>
-        );
+        console.log('Upcoming is valid')
+        const eventList = events.map(
+
+            eventCard =>
+                <li keys={events.indexOf(this) }> {/*arr.indexOf(this) */}
+                    <ImageCard
+                        events='true' alt={props.title}
+                        title={props.title}
+                        src={props.src}
+                        date={props.date}
+                        time={props.time}
+                    />
+                </li>
+            )
+            console.log(events)
+        return eventList;
     }
-
-
-
-
-
-
-
-    // return (
-    //     <aside>
-    //         <div>
-    //             <h2>Upcoming Events</h2>
-    //         </div>
-    //         <ul>
-    //             {events.map(event =>
-    //                 <li key={event.id}>
-    //                     <ImageCard
-    //                         event={true}
-    //                         alt={event.title}
-    //                         src={event.src}
-    //                         date={event.date}
-    //                         time={event.time}
-    //                         title={event.title}
-    //                     />
-    //                 </li>
-    //             )}
-    //         </ul>
-    //     </aside>
-    // );
-    // } else if (props.type === 'recent') {
-    //     return (
-    //         <aside>
-    //             <div>
-    //                 <h2>Recent Events</h2>
-    //             </div>
-    //             <ul>
-    //                 {events.map(event =>
-    //                     <li key={event.id}>
-    //                         <a href={event.src}>
-    //                             <h3>{event.title}</h3>
-    //                         </a>
-    //                         <div>
-    //                             <small>{event.date}</small>
-    //                             <span>
-    //                                 <a href={event.src}>
-    //                                     <AiFillYoutube />
-    //                                 </a>
-    //                             </span>
-
-    //                         </div>
-    //                     </li>
-    //                 )}
-    //             </ul>
-    //         </aside>
-    //     );
-    // }
 };
 
 const Socials = () => {

@@ -1,5 +1,6 @@
 import React from "react";
 import { EventList } from "./Data";
+import pic1 from '../Assets/baptisms.jpeg';
 
 //id
 //src
@@ -11,16 +12,23 @@ import { EventList } from "./Data";
 const EventLister = () => {
     const Events = [
         {
-            id:1,
-            src:'image.jpg',
-            title:'Sermon 1',
-            date:'01-02-2000',
-            time:'09:00',
+            id: 1,
+            src: { pic1 },
+            title: 'event 1',
+            date: '01-02-2000',
+            time: '09:00',
+        },
+        {
+            id: 2,
+            src: { pic1 },
+            title: 'event 2',
+            date: '01-02-2002',
+            time: '09:00',
         }
     ]
     return (
         <div id="events">
-            <EventList id='upcoming' type='upcoming' events={Events} />
+            <EventList type='upcoming' events={Events} />
         </div>
     )
 }
