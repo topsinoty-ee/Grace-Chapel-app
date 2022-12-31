@@ -111,7 +111,7 @@ const Field = (props) => {
 }
 
 const ImageCard = (props) => {
-    if(props.events==='true'){
+    if (props.events === 'true') {
         return (
             <div className='card'>
                 <figure>
@@ -122,19 +122,19 @@ const ImageCard = (props) => {
                     </figcaption>
                 </figure>
             </div>
-    
+
         );
-    }else{
+    } else {
         return (
             <div className='card'>
                 <figure>
                     <img alt={props.alt} src={props.src} />
                     <figcaption>
-                        {props.description}    
+                        {props.description}
                     </figcaption>
                 </figure>
             </div>
-    
+
         );
     }
 }
@@ -182,56 +182,66 @@ const FamilyBranches = [
     }
 ]
 
-const EventList = ({ events }, props) => {
-    if (props.type === 'upcoming') {
-        return (
-            <aside>
-                <div>
-                    <h2>Upcoming Events</h2>
-                </div>
-                <ul>
-                    {events.map(event =>
-                        <li key={event.id}>
-                            <ImageCard
-                                event={true}
-                                alt={event.title}
-                                src={event.src}
-                                date={event.date}
-                                time={event.time}
-                                title={event.title}
-                            />
-                        </li>
-                    )}
-                </ul>
-            </aside>
-        );
-    } else if (props.type === 'recent') {
-        return (
-            <aside>
-                <div>
-                    <h2>Recent Events</h2>
-                </div>
-                <ul>
-                    {events.map(event =>
-                        <li key={event.id}>
-                            <a href={event.src}>
-                                <h3>{event.title}</h3>
-                            </a>
-                            <div>
-                                <small>{event.date}</small>
-                                <span>
-                                    <a href={event.src}>
-                                        <AiFillYoutube />
-                                    </a>
-                                </span>
+const EventList = (
+    events//, props
+) => {
+    // if (props.type === 'upcoming') {
+    const type = events.type;
 
-                            </div>
-                        </li>
-                    )}
-                </ul>
-            </aside>
-        );
-    }
+
+
+
+
+
+    
+    // return (
+    //     <aside>
+    //         <div>
+    //             <h2>Upcoming Events</h2>
+    //         </div>
+    //         <ul>
+    //             {events.map(event =>
+    //                 <li key={event.id}>
+    //                     <ImageCard
+    //                         event={true}
+    //                         alt={event.title}
+    //                         src={event.src}
+    //                         date={event.date}
+    //                         time={event.time}
+    //                         title={event.title}
+    //                     />
+    //                 </li>
+    //             )}
+    //         </ul>
+    //     </aside>
+    // );
+    // } else if (props.type === 'recent') {
+    //     return (
+    //         <aside>
+    //             <div>
+    //                 <h2>Recent Events</h2>
+    //             </div>
+    //             <ul>
+    //                 {events.map(event =>
+    //                     <li key={event.id}>
+    //                         <a href={event.src}>
+    //                             <h3>{event.title}</h3>
+    //                         </a>
+    //                         <div>
+    //                             <small>{event.date}</small>
+    //                             <span>
+    //                                 <a href={event.src}>
+    //                                     <AiFillYoutube />
+    //                                 </a>
+    //                             </span>
+
+    //                         </div>
+    //                     </li>
+    //                 )}
+    //             </ul>
+    //         </aside>
+    //     );
+    // }
 };
 
 const Socials = () => {

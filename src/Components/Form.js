@@ -58,6 +58,9 @@ const Form = () => {
                     </ul>
                 </div>
                 <div>
+                    <textarea id='textArea' rows={'10'} style={{ width: '100%' }}></textarea>
+                </div>
+                <div>
                     <Button
                         text={
                             <Field
@@ -67,9 +70,6 @@ const Form = () => {
                             />
                         }
                     />
-                </div>
-                <div>
-                    <textarea id='textArea' rows={'10'} style={{ width: '100%' }}></textarea>
                 </div>
             </form>
         </div>
