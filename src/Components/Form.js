@@ -15,7 +15,9 @@ const Form = () => {
                     <ul>
                         <li key='Name'>
                             <div>
-                                <Field type='required' text='Name' />
+                                <h3>
+                                    <span>Name</span>
+                                </h3>
                                 <div>
                                     <Field
                                         type='input'
@@ -49,7 +51,7 @@ const Form = () => {
                                     type='input'
                                     text='Tel'
                                     required={false}
-                                
+
                                 />
                             </div>
                         </li>
@@ -65,6 +67,9 @@ const Form = () => {
                             />
                         }
                     />
+                </div>
+                <div>
+                    <textarea id='textArea' rows={'10'} style={{ width: '100%' }}></textarea>
                 </div>
             </form>
         </div>

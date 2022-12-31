@@ -76,33 +76,31 @@ const Field = (props) => {
         console.log(num)
     } else if (props.type === 'required') {
         return (
-            <div>
+            <div style={{ display: 'inline' }}>
                 <label>
                     {props.text}
                     {props.content}
                 </label>
             </div>
         )
-    } else if (props.type === 'input') {
+    } else if (props.text === 'Tel' && props.type === 'input') {
         return (
-            <span>
-                <label>
-                    {props.text}
-                    <input id={props.for} name={props.for} type={props.Type} required />
-                </label>
-            </span>
-        )
-
-    } else if (props.type === 'input' && props.required === 'false') {
-        return (
-            <span>
+            <span style={{ display: 'inline' }}>
                 <label>
                     {props.text}
                     <input id={props.for} name={props.for} type={props.Type} />
                 </label>
             </span>
         )
-
+    } else if (props.type === 'input') {
+        return (
+            <span style={{ display: 'inline' }}>
+                <label>
+                    {props.text}
+                    <input id={props.for} name={props.for} type={props.Type} required />
+                </label>
+            </span>
+        )
     } else {
         return <p>
             {props.text}:
