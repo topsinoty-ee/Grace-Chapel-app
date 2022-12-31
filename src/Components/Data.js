@@ -183,17 +183,37 @@ const FamilyBranches = [
 ]
 
 const EventList = (
-    events//, props
+    props//, props
 ) => {
     // if (props.type === 'upcoming') {
-    const type = events.type;
+    const type = props.type;
+    const events = props.events;
+
+    const eventlist = events.map(
+        event =>
+            <li>
+                <ImageCard
+                    events={true}
+                    alt={props.title}
+                    title={props.title}
+                />
+            </li>
+    )
+
+    while (type === 'upcoming') {
+        return (
+            <aside>
+                <ul></ul>
+            </aside>
+        );
+    }
 
 
 
 
 
 
-    
+
     // return (
     //     <aside>
     //         <div>
