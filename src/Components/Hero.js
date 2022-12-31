@@ -1,5 +1,6 @@
 import React from 'react'
-import { Socials, link, Media } from './Data'
+import { Socials, link, Video } from './Data'
+import testVid from '../Assets/movie.mp4'
 
 const Hero = () => {
     return (
@@ -20,7 +21,7 @@ const Hero = () => {
                 </div>
             </div>
             <div id='hero--video'>
-                <Media type='video' video={link.heroVid} percent='80%' format='ALM' />
+                <Video video={testVid} percent='80%' format='ALM' />
             </div>
         </div>
     )
