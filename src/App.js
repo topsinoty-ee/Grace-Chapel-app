@@ -4,7 +4,7 @@ import Main from "./Components/Main";
 import './App.css';
 export default function App() {
     return (
-        <div>
+        <div className="m-0">
             <Header />
             <Main/>
             <Footer />

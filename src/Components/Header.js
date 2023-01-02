@@ -3,9 +3,9 @@ import Navbar from './Navbar';
 import React from "react";
 
 
-export default function Header() {
+export default function  Header() {
     return (
-        <header id='header'>
+        <header className='fixed '>
             <nav id='nav'>
                 <div>
                     <a href="/"><img src={Logo} alt="/" /></a>
