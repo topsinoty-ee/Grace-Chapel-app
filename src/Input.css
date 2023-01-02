@@ -1,0 +1,9 @@
+/* global css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../src/Assets/Fonts/Exo-2/Exo2-VariableFont_wght.ttf');
+  }

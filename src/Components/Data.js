@@ -26,21 +26,25 @@ const Name = churchName;
 const Vert = verticalDivider;
 const Nav = [
     {
+        id:1,
         link: '/about-us',
         text: "about us",
         description: "About us"
     },
     {
+        id:2,
         link: '/sermons',
         text: "sermons",
         description: "Watch our services"
     },
     {
+        id:3,
         link: '/calender',
         text: "calender",
         description: "View upcoming events and weekly activities"
     },
     {
+        id:4,
         link: '/give',
         text: "give",
         //Add text

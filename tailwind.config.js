@@ -1,7 +1,12 @@
+
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
-    './components/**/*.{html,js}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './public/index.html',
+    './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     screens: {
@@ -25,6 +30,10 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
+    maxHeight: {
+      '10vh': '10vh',
+      '1/2': '50%'
+    },
     extend: {
       spacing: {
         '128': '32rem',
@@ -32,6 +41,9 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
+      },
+      fontFamily: {
+        sans: ['Exo', 'sans-serif']
       }
     }
   },
