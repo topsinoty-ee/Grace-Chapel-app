@@ -26,25 +26,25 @@ const Name = churchName;
 const Vert = verticalDivider;
 const Nav = [
     {
-        id:1,
+        id: 1,
         link: '/about-us',
         text: "about us",
         description: "About us"
     },
     {
-        id:2,
+        id: 2,
         link: '/sermons',
         text: "sermons",
         description: "Watch our services"
     },
     {
-        id:3,
+        id: 3,
         link: '/calender',
         text: "calender",
         description: "View upcoming events and weekly activities"
     },
     {
-        id:4,
+        id: 4,
         link: '/give',
         text: "give",
         //Add text
@@ -152,16 +152,12 @@ const Button = (props) => {
 }
 const Video = (props) => {
 
-    const noPointer = {
-        pointerEvents: 'none'
-    }
-
     if (props.format === 'ALM')//autoPlay muted loop {alphabetical order}
     {
         return (
 
             <figure>
-                <video width={props.percent} style={noPointer} height={props.percent} name='media' autoPlay muted loop>
+                <video className={props.style} name='media' autoPlay muted loop>
                     <source src={props.video} type="video/mp4" />
                     Your browser does not support the video element.
                 </video>
@@ -196,7 +192,7 @@ const EventList = (props) => {
         const eventList = events.map(
 
             eventCard =>
-                <li keys={events.indexOf(this) }> {/*arr.indexOf(this) */}
+                <li keys={events.indexOf(this)}> {/*arr.indexOf(this) */}
                     <ImageCard
                         events='true' alt={props.title}
                         title={props.title}
@@ -205,8 +201,8 @@ const EventList = (props) => {
                         time={props.time}
                     />
                 </li>
-            )
-            console.log(events)
+        )
+        console.log(events)
         return eventList;
     }
 };

@@ -4,6 +4,26 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Exo';
-    src: url('../src/Assets/Fonts/Exo-2/Exo2-VariableFont_wght.ttf');
-  }
+  font-family: 'Exo';
+  src: url('../src/Assets/Fonts/Exo-2/Exo2-VariableFont_wght.ttf');
+}
+
+::selection {
+  color: grey;
+  background-color: none;
+}
+li,
+img,
+video {
+  user-select: none;
+}
+p,
+h3 a {
+  color: #3b82f6;
+}
+p,
+h3 a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  transition: all 1s;
+}
