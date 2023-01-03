@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
       </section>
       {/*  id='hero--video' */}
-      <div className='-mb-20'>
+      <div className='-mb-20 mt-10'>
         <Video
           video={testVid}
           format="ALM"

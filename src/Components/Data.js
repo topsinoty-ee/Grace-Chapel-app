@@ -78,43 +78,11 @@ const Contact = {
 addChar(num, 5, '(', ')')
 
 const Field = (props) => {
-  if (props.text === num) {
-    num = '(+372) 1234 5678'
-    console.log(num)
-  } else if (props.type === 'required') {
-    return (
-      <div style={{ display: 'inline' }}>
-        <label>
-          {props.text}
-          {props.content}
-        </label>
-      </div>
-    )
-  } else if (props.text === 'Tel' && props.type === 'input') {
-    return (
-      <span style={{ display: 'inline' }}>
-        <label>
-          {props.text}
-          <input id={props.for} name={props.for} type={props.Type} />
-        </label>
-      </span>
-    )
-  } else if (props.type === 'input') {
-    return (
-      <span style={{ display: 'inline' }}>
-        <label>
-          {props.text}
-          <input id={props.for} name={props.for} type={props.Type} required />
-        </label>
-      </span>
-    )
-  } else {
-    return (
-      <p>
-        {props.text}:<a href={props.link}> {props.content}</a>
-      </p>
-    )
-  }
+  return (
+    <p>
+      {props.text}:<a href={props.link}> {props.content}</a>
+    </p>
+  )
 }
 
 const ImageCard = (props) => {
@@ -168,18 +136,18 @@ const Video = (props) => {
 }
 const FamilyBranches = [
   {
-    id:1,
+    id: 1,
     description: 'Church Name 1',
     src:
       'https://seminary.grace.edu/wp-content/uploads/2021/03/Understanding-Biblical-Christian-Fellowship-1200x800-c-default.jpg',
   },
   {
-    id:2,
+    id: 2,
     description: 'Church Name 2',
     src: 'https://www.lillyfellows.org/media/1057/postdoctoralfellowsabout.jpg',
   },
   {
-    id:3,
+    id: 3,
     description: 'Church Name 3',
     src:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8IFUykdawCoKU0b0iQSNypPBNffy0XsO_PQ&usqp=CAU',

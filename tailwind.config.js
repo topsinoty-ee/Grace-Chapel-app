@@ -23,6 +23,7 @@ module.exports = {
       'gray-dark': '#273444',
       gray: '#8492a6',
       'gray-light': '#d3dce6',
+      'warning-red': '#FF3131',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -34,7 +35,15 @@ module.exports = {
     },
     minHeight: {
       '90vh': '90vh',
-      'full': '100vh',
+      full: '100vh',
+    },
+    maxWidth: {
+      '10vh': '10vh',
+      '1/2': '50%',
+    },
+    minWidth: {
+      '90vh': '90vh',
+      full: '100vh',
     },
     extend: {
       spacing: {
