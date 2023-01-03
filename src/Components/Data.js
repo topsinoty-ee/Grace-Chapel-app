@@ -10,7 +10,7 @@ import {
 //DO NOT ADD SPACE. Input with country code.
 const verticalDivider = ' | '
 let num = '+37212345678'
-const mail = 'example@somewhere.com'
+const Mail = 'example@somewhere.com'
 const churchName = 'Grace Chapel Tallinn'
 
 const link = {
@@ -22,7 +22,7 @@ const link = {
   mapLocation:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.941194716545!2d24.752800615653978!3d59.43405530966379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692936000ef7fb3%3A0x73e9406c32a38e38!2zUsOkdmFsYSA4!5e0!3m2!1sen!2see!4v1669968646436!5m2!1sen!2see',
 
-  mail: 'mailto:' + mail,
+  Mail: 'mailto:' + Mail,
   tel: 'tel:' + num,
 }
 
@@ -72,8 +72,8 @@ function addChar(x, loc, a, b) {
 const Contact = {
   //Number + country code
   tel: num,
-  //mail
-  mail: mail,
+  //Mail
+  Mail: Mail,
 }
 addChar(num, 5, '(', ')')
 
@@ -87,7 +87,6 @@ const Field = (props) => {
 
 const ImageCard = (props) => {
   if (props.events === 'true') {
-    console.log('test')
     return (
       <div className="event-card">
         <figure>
@@ -159,7 +158,6 @@ const EventList = (props) => {
   const events = props.events //arr
 
   while (type === 'upcoming') {
-    console.log('Upcoming is valid')
     const eventList = events.map((eventCard) => (
       <li keys={events.indexOf(this)}>
         {' '}
@@ -174,7 +172,6 @@ const EventList = (props) => {
         />
       </li>
     ))
-    console.log(events)
     return eventList
   }
 }
@@ -238,19 +235,6 @@ const Socials = (props) => {
     return row
   }
 }
-
-console.log(
-  `This is an inline link: ${document.getElementsByName('inline-link')}`,
-)
-
-document.addEventListener('onmouseover', (e) => {
-  const target = e.target
-
-  if (target === document.getElementsByName('inline-link')) {
-    console.log('valid')
-    target.classList.add('hoverLink')
-  }
-})
 //export
 export {
   FamilyBranches,
@@ -264,11 +248,7 @@ export {
   Video,
   Button,
   num,
-  mail,
+  Mail,
   EventList,
 }
 
-//Tests
-console.log('Num:' + num)
-console.log(Contact.tel)
-console.log(Contact.mail)

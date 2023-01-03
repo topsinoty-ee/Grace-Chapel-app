@@ -1,8 +1,12 @@
 import React from 'react'
+import { Mail } from './Data'
 
 const Form = () => {
+  let input = document.getElementById('textArea')
+  const formAction = 'mailto:' + { Mail } + '?subject=' + { input }
+
   return (
-    <div className="min-h-90vh bg-green px-4">
+    <div className="min-h-90vh bg-purple px-4">
       <div className="max-w-1/2 w-1/3">
         <h3 className="text-[4rem]">Get in touch</h3>
         <p className="text-xl">
@@ -20,12 +24,7 @@ const Form = () => {
         encType="text/plain"
         name="Contact_Us"
       >
-        <ul className="max-w-[30rem] space-y-2">
-          <h3>
-            <span className="after:content-['*'] after:ml-0.5 after:text-warning-red block text-2xl font-semibold">
-              Name
-            </span>
-          </h3>
+        <ul className="max-w-[30rem] mt-3 space-y-2">
           <li>
             <section className="flex flex-row w-full flex-wrap space-y-1">
               <div className="flex flex-col w-1/2 max-w-[50%] min-w-[40%]">
@@ -79,14 +78,19 @@ const Form = () => {
           <li>
             <div>
               <textarea
-                form_id="GetInTouch"
-                className="p-2 rounded-lg max-w-[97.5%] w-full resize-none scroll-m-0"
+                id="textArea"
+                className="p-2 rounded-lg max-w-[97.5%] w-full resize-none scroll-m-0 h-24"
                 placeholder="Send us a message!"
                 required
                 wrap="hard"
                 cols="3"
               ></textarea>
             </div>
+          </li>
+          <li>
+            <button className="capitalize hover:bg-gray-light px-3 py-2 place-self-center rounded">
+              <input type="submit" />
+            </button>
           </li>
         </ul>
       </form>

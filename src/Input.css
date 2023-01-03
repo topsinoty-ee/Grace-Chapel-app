@@ -18,3 +18,29 @@ video,
 button {
   user-select: none;
 }
+
+//scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+textarea:-webkit-scrollbar {
+  width: 10px;
+}
+textarea:-webkit-scrollbar-track {
+  background: gray-light;
+}
+textarea:-webkit-scrollbar-thumb {
+  background: gray;
+}
+textarea:-webkit-scrollbar-thumb:hover {
+  background: gray-dark;
+}

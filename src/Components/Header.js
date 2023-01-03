@@ -12,7 +12,7 @@ const Logo =
     </div>;
 const Header = () => {
     return (
-        <header className='m-0 bg-gray'>
+        <header className='m-0 bg-purple'>
             <div className='-mx-0 px-2 flex place-content-between max-h-10vh'>
                 {Logo}
                 <Navbar items={Nav}/>
