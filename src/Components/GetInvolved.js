@@ -1,18 +1,31 @@
-import { FamilyBranches, ImageCard } from "./Data";
-import React from "react";
+import { FamilyBranches } from './Data'
+import React from 'react'
 
-export default function GetInvolved() {
-    return (
-        <div className="getInvolved--mainDiv">
-            <header >
-                <h3>Get Involved</h3>
-                <p>There are many ways you can get involved with the Grace Chapel Family</p>
-            </header>
-            <section>
-                <ImageCard alt={FamilyBranches[0].churchName} description={FamilyBranches[0].description} src={FamilyBranches[0].src} />
-                <ImageCard alt={FamilyBranches[1].churchName} description={FamilyBranches[1].description} src={FamilyBranches[1].src} />
-                <ImageCard alt={FamilyBranches[2].churchName} description={FamilyBranches[2].description} src={FamilyBranches[2].src} />
-            </section>
-        </div>
-    );
-};
+const GetInvolved = () => {
+  const GetInvolvedList = (props) => {
+    const cards = props.cards
+    cards.map((card) => (
+      <li>
+        <figure>
+          <img alt={card.alt} src={card.src} />
+          <figcaption>{card.description} red</figcaption>
+        </figure>
+      </li>
+    ))
+  }
+
+  return (
+    <div className="px-4 min-h-90vh">
+      <header className='flex flex-col place-content-center space-y-5'>
+        <h3 className="text-[4rem] mx-auto w-auto flex place-content-center">Get Involved</h3>
+        <p className='flex place-content-center'>
+          There are many ways you can get involved with the Grace Chapel Family
+        </p>
+      </header>
+      <ul>
+        <GetInvolvedList cards={FamilyBranches} />
+      </ul>
+    </div>
+  )
+}
+export default GetInvolved

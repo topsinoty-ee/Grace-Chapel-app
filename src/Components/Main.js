@@ -6,10 +6,10 @@ import Visit from "./Visit";
 
 export default function Main() {
     return (
-        <div>
+        <main >
             <Hero />
             <Visit />
             <GetInvolved />
             <Events />
-        </div>)
+        </main>)
 }

@@ -1,12 +1,10 @@
-
-
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: [
     './components/**/*.{js,ts,jsx,tsx}',
     './public/index.html',
-    './src/**/*.{js,ts,jsx,tsx}'
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     screens: {
@@ -16,14 +14,14 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
+      blue: '#1fb6ff',
+      purple: '#7e5bef',
+      pink: '#ff49db',
+      orange: '#ff7849',
+      green: '#13ce66',
+      yellow: '#ffc82c',
       'gray-dark': '#273444',
-      'gray': '#8492a6',
+      gray: '#8492a6',
       'gray-light': '#d3dce6',
     },
     fontFamily: {
@@ -32,7 +30,11 @@ module.exports = {
     },
     maxHeight: {
       '10vh': '10vh',
-      '1/2': '50%'
+      '1/2': '50%',
+    },
+    minHeight: {
+      '90vh': '90vh',
+      'full': '100vh',
     },
     extend: {
       spacing: {
@@ -43,9 +45,13 @@ module.exports = {
         '4xl': '2rem',
       },
       fontFamily: {
-        sans: ['Exo', 'sans-serif']
-      }
-    }
+        sans: ['Exo', 'sans-serif'],
+      },
+      backgroundImage: {
+        'hero-pattern': "url('../src/Assets/bg-pic.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+    },
   },
   plugins: [],
 }

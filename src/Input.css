@@ -14,16 +14,7 @@
 }
 li,
 img,
-video {
+video,
+button {
   user-select: none;
-}
-p,
-h3 a {
-  color: #3b82f6;
-}
-p,
-h3 a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: from-font;
-  transition: all 1s;
 }

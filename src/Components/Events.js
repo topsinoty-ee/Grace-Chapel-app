@@ -27,7 +27,7 @@ const EventLister = () => {
         }
     ]
     return (
-        <div id="events">
+        <div className="px-4">
             <EventList type='upcoming' events={Events} />
         </div>
     )
