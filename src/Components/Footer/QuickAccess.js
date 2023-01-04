@@ -4,7 +4,7 @@ import React from 'react'
 const Links = () => {
   return (
     <ol>
-      <nav id="footer-links">
+      <nav className="flex flex-row space-x-3">
         <li className="footer-link">
           <a href="/contact" title="Contact us">
             Contact Us
@@ -40,8 +40,9 @@ const Copyright = () => {
 }
 const QuickAccess = () => {
   return (
-    <div id="quickAccess">
+    <div className="flex flex-col items-center mt-4 bg-gray-dark text-gray-light">
       <Links />
+      <hr />
       <Copyright />
     </div>
   )

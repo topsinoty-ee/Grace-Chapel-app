@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer>
       <Form />
-      <div className="px-4 bg-footer-texture">
-        <div className="w-full flex flex-row place-content-between">
+      <div className="bg-footer-texture">
+        <div className="px-4 w-full flex flex-row place-content-between">
           <ContactSection />
           <Map />
         </div>
