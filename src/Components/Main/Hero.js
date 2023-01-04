@@ -1,7 +1,7 @@
 /* eslint-disable react/style-prop-object */
 import React from 'react'
-import { Socials, link, Video } from './Data'
-import testVid from '../Assets/movie.mp4'
+import { Socials, link, Video } from '../Data'
+import testVid from '../../Assets/movie.mp4'
 
 const Hero = () => {
   return (

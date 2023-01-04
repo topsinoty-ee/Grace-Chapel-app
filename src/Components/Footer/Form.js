@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail } from './Data'
+import { Mail } from '../Data'
 
 const Form = () => {
   let input = document.getElementById('textArea')
@@ -8,7 +8,7 @@ const Form = () => {
   return (
     <div className="min-h-90vh bg-purple px-4">
       <div className="max-w-1/2 w-1/3">
-        <h3 className="text-[4rem]">Get in touch</h3>
+        <h3 className="text-header">Get in touch</h3>
         <p className="text-xl">
           <span>
             We love to hear from people, so if you'd like to ask a question, get

@@ -1,6 +1,6 @@
 import React from "react";
-import { EventList } from "./Data";
-import pic1 from '../Assets/baptisms.jpeg';
+import { EventList } from "../Data";
+import pic1 from '../../Assets/baptisms.jpeg';
 
 //id
 //src

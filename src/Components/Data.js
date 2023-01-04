@@ -77,13 +77,7 @@ const Contact = {
 }
 addChar(num, 5, '(', ')')
 
-const Field = (props) => {
-  return (
-    <p>
-      {props.text}:<a href={props.link}> {props.content}</a>
-    </p>
-  )
-}
+
 
 const ImageCard = (props) => {
   if (props.events === 'true') {
@@ -175,6 +169,24 @@ const EventList = (props) => {
     return eventList
   }
 }
+const Box = (props) => {
+  return (
+    <a href={props.link}>
+      <div
+        itemID={props.id}
+        //   className="border-black flex place-content-center flex-col content-center text-center border-2 w-1/2 max-w-[10rem] h-40 rounded-3xl mx-auto box"
+        className="border-2 h-40 w-40 p-0 rounded-3xl overflow-hidden flex place-content-center content-center"
+      >
+        <div className={props.className}>
+          <h3 className="text-8xl">{props.text}</h3>
+          <p>
+            <span className="text-xs">{props.display}</span>
+          </p>
+        </div>
+      </div>
+    </a>
+  )
+}
 
 const Socials = (props) => {
   const row = (
@@ -239,7 +251,6 @@ const Socials = (props) => {
 export {
   FamilyBranches,
   ImageCard,
-  Field,
   Nav,
   Vert,
   Name,
@@ -250,5 +261,5 @@ export {
   num,
   Mail,
   EventList,
+  Box
 }
-

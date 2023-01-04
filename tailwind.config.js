@@ -24,6 +24,7 @@ module.exports = {
       gray: '#8492a6',
       'gray-light': '#d3dce6',
       'warning-red': '#FF3131',
+      'ring-orange': '#FF7849',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -45,6 +46,7 @@ module.exports = {
       '90vh': '90vh',
       full: '100vh',
     },
+
     spacing: {
       px: '1px',
       0: '0',
@@ -93,10 +95,14 @@ module.exports = {
       fontFamily: {
         sans: ['Exo', 'sans-serif'],
       },
+      fontSize: {
+        header: '4rem',
+      },
       backgroundImage: {
         'hero-pattern': "url('../src/Assets/bg-pic.svg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'footer-texture': "url('../src/Assets/footer-bg-pic.svg')",
       },
+      
     },
   },
   plugins: [],

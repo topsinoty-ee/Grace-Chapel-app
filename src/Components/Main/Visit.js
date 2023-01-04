@@ -1,6 +1,6 @@
 import React from 'react'
-import pic from '../Assets/Visit--img.svg'
-import { Button } from './Data'
+import pic from '../../Assets/Visit--img.svg'
+import { Button } from '../Data'
 
 const Visit = () => {
   return (

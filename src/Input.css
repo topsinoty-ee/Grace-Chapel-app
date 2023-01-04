@@ -12,25 +12,32 @@
   color: grey;
   background-color: none;
 }
+
+/*box-footer*/
+@layer components {
+  .box {
+    @apply h-full w-full flex place-content-center flex-col content-center items-center place-items-center;
+  }
+}
+
 li,
 img,
 video,
 button {
   user-select: none;
 }
-
-//scrollbar
+/*scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- ::-webkit-scrollbar-thumb {
-  background: #888; 
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 textarea:-webkit-scrollbar {
   width: 10px;

@@ -1,4 +1,4 @@
-import { FamilyBranches } from './Data'
+import { FamilyBranches } from '../Data'
 import React from 'react'
 
 const GetInvolved = () => {
@@ -16,9 +16,11 @@ const GetInvolved = () => {
 
   return (
     <div className="px-4 min-h-90vh">
-      <header className='flex flex-col place-content-center space-y-5'>
-        <h3 className="text-[4rem] mx-auto w-auto flex place-content-center">Get Involved</h3>
-        <p className='flex place-content-center'>
+      <header className="flex flex-col place-content-center space-y-5">
+        <h3 className="text-header mx-auto w-auto flex place-content-center">
+          Get Involved
+        </h3>
+        <p className="flex place-content-center">
           There are many ways you can get involved with the Grace Chapel Family
         </p>
       </header>

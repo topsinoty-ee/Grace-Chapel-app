@@ -1,7 +1,7 @@
-import pic from '../Assets/Logos/s-Logo.svg';
+import pic from '../../Assets/Logos/s-Logo.svg';
 import Navbar from './Navbar';
 import React from "react";
-import { Nav } from './Data';
+import { Nav } from '../Data';
 
 
 const Logo =
